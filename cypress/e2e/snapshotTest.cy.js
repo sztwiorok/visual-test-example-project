@@ -1,6 +1,8 @@
+const url = process.env.CI ? "http://0.0.0.0:4000" : "http://localhost:4000";
+
 describe("snapshot example", () => {
   it("Take snapshot 1", () => {
-    cy.visit("http://host.docker.internal:4000/");
+    cy.visit(url);
     new Array(1).fill("").forEach((_, index) => {
       cy.takeSnap(`Snapshot ${index}`);
     });

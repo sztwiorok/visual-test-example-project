@@ -4,6 +4,7 @@ const staticFastify = require("@fastify/static");
 const path = require("path");
 
 const cwd = process.cwd();
+const isCI = process.env.CI;
 const port = 4000;
 
 const app = Fastify({
@@ -28,4 +29,4 @@ app.get("/page", (request, reply) => {
   reply.sendFile("page.html");
 });
 
-app.listen({ port });
+app.listen({ host: isCI ? '0.0.0.0' : '127.0.0.1',  port });
