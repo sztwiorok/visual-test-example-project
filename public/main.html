@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      customElements.define(
+        "my-clock",
+        class extends HTMLElement {
+          #internals = null;
+          constructor() {
+            super();
+            this.#internals = this.attachInternals();
+            if (!this.#internals.shadowRoot) {
+              // If we don't have SSR content, build the shadow root
+              this.attachShadow({ mode: "open" }).innerHTML = `
+          <style> Clock styles here </style>
+          <div>
+            <span id=hour></span> : <span id=min></span> : <span id=sec></span>
+          </div>
+        `;
+            }
+            const shadow = this.#internals.shadowRoot;
+            this.hours = shadow.querySelector("#hour");
+            this.minutes = shadow.querySelector("#min");
+            this.seconds = shadow.querySelector("#sec");
+          }
+
+          connectedCallback() {
+            this.update();
+            this.interval = setInterval(() => this.update(), 1000);
+          }
+
+          disconnectedCallback() {
+            clearInterval(this.interval);
+          }
+
+          update() {
+            const pad = (v) => {
+              return String(v).padStart(2, "0");
+            };
+            const d = new Date();
+            this.hours.textContent = pad(d.getHours());
+            this.minutes.textContent = pad(d.getMinutes());
+            this.seconds.textContent = pad(d.getSeconds());
+          }
+        }
+      );
+    </script>
+  </head>
+  <body>
+    <h1 class="lama">Test site</h1>
+    <h2>Input</h2>
+    <label>Test text input</label>
+    <input id="input" type="text" />
+    <h2>Image</h2>
+    <div>
+      <img
+        class="owca"
+        src="https://fajnepodroze.pl/wp-content/uploads/2020/01/owca.jpg"
+      />
+    </div>
+    <div>
+      <img
+        class="owca2"
+        src="owca.webp"
+      />
+    </div>
+    <a href="page.html">link text</a>
+    <my-clock />
+  </body>
+</html>

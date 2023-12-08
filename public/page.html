@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        #header {
+            color: green;
+        }
+    </style>
+  </head>
+  <body>
+    <h1 id="header">PAGE</h1>
+    <h1 style="color: red">PAGE</h1>
+    <h1>PAGE</h1>
+    <h1>PAGE</h1>
+    <h1>PAGE</h1>
+
+    <iframe
+            title="Inline Frame Example"
+            width="300"
+            height="200"
+            src="http://localhost:4000/">
+    </iframe>
+
+    <iframe src="javascript:console.log('lama');"></iframe>
+
+    <div style="display: flex; flex-direction: column">
+      <div>
+        <video controls width="250" poster="https://placehold.co/250x250/png">
+          <source
+            src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
+            type="video/webm"
+          />
+        </video>
+
+        <video controls width="250" poster="/250x250.png">
+          <source
+            src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
+            type="video/webm"
+          />
+        </video>
+
+        <video controls width="250" crossorigin="anonymous">
+          <source
+            src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
+            type="video/webm"
+          />
+        </video>
+      </div>
+      <div>
+        <video controls width="250" poster="https://placehold.co/250x250/png">
+          <source src="/flower_local.webm" type="video/webm" />
+        </video>
+
+        <video controls width="250" poster="/250x250.png">
+          <source src="/flower_local.webm" type="video/webm" />
+        </video>
+
+        <video controls width="250">
+          <source src="/flower_local.webm" type="video/webm" />
+        </video>
+      </div>
+      <div>
+        <video
+          controls
+          width="250"
+          poster="https://placehold.co/250x250/png"
+        ></video>
+
+        <video controls width="250" poster="/250x250.png"></video>
+
+        <video controls width="250"></video>
+      </div>
+      <div>
+        <canvas id="canvas" width="300" height="300"></canvas>
+      </div>
+    </div>
+  </body>
+  <script>
+    const canvas = document.getElementById("canvas");
+    const ctx = canvas.getContext("2d");
+    ctx.fillStyle = "blue";
+    ctx.fillRect(10, 10, 150, 100);
+
+    // document.styleSheets[1].insertRule("h1 { color: orange }");
+
+    const sheet = new CSSStyleSheet();
+    sheet.replaceSync("h1 { color: orange }");
+
+    // Apply the stylesheet to a document
+    document.adoptedStyleSheets = [sheet];
+  </script>
+</html>
