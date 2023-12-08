@@ -4,9 +4,9 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node './server.js' && wait-on http://localhost:4000",
-    "cy-test": "npx cypress run",
-    "test": "visual-test-cli exec \"npm run cy-test\""
+    "start": "node './server.js'",
+    "cy-test": "visual-test-cli exec \"npx cypress run\"",
+    "test": "start-server-and-test start http://localhost:4000 cy-test"
   },
   "author": "",
   "license": "ISC",
@@ -22,6 +22,6 @@
     "@fastify/static": "6.11.2",
     "cypress": "13.3.1",
     "fastify": "4.24.2",
-    "wait-on": "^7.2.0"
+    "start-server-and-test": "^2.0.3"
   }
 }
