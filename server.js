@@ -29,4 +29,4 @@ app.get("/page", (request, reply) => {
   reply.sendFile("page.html");
 });
 
-app.listen({ host: isCI ? '0.0.0.0' : '127.0.0.1',  port });
+app.listen({ host: isCI ? '0.0.0.0' : 'localhost',  port });
