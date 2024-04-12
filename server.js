@@ -5,7 +5,7 @@ const path = require("path");
 
 const cwd = process.cwd();
 const isCI = process.env.CI;
-const port = 4000;
+const port = 4322;
 
 const app = Fastify({
   logger: {
