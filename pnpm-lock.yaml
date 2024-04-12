@@ -6,11 +6,11 @@ settings:
 
 dependencies:
   '@buddy-works/visual-test-cli':
-    specifier: 0.0.1
-    version: 0.0.1
+    specifier: ^0.0.14
+    version: 0.0.14
   '@buddy-works/visual-test-cypress-plugin':
-    specifier: 0.0.1
-    version: 0.0.1
+    specifier: ^0.0.4
+    version: 0.0.4
   '@fastify/cors':
     specifier: 8.4.0
     version: 8.4.0
@@ -62,8 +62,8 @@ packages:
       js-tokens: 4.0.0
     dev: false
 
-  /@buddy-works/visual-test-cli@0.0.1:
-    resolution: {integrity: sha512-P2K6IlRx3e4G/2CLZbOB5iF4AX89qRzG7Wq6sFpgc8wUKdnranfspAgkoxnIHU7DmaE3oj9t47PXsXVZallhbQ==, tarball: https://npm.pkg.github.com/download/@buddy-works/visual-test-cli/0.0.1/6fde22ce4291958baa692e815f4da03aed44211f}
+  /@buddy-works/visual-test-cli@0.0.14:
+    resolution: {integrity: sha512-h8mLdbWHh1AjT495iimXGYjAWxmv0Lz+cfAoBeqJ97WrrSepxoPSEC78TZoiRcD8qq8HwBITGpJxD3DGTef/4w==, tarball: https://npm.pkg.github.com/download/@buddy-works/visual-test-cli/0.0.14/b933fbef87cd851909b2bd865da0844536532a7a}
     engines: {node: '>=18.0.0'}
     hasBin: true
     dependencies:
@@ -72,8 +72,10 @@ packages:
       commander: 11.1.0
       cross-spawn: 7.0.3
       fastify: 4.24.3
+      fetch-blob: 4.0.0
       node-fetch: 3.3.2
       puppeteer: 21.6.0
+      undici: 6.3.0
       uuid: 9.0.1
       which: 4.0.0
     transitivePeerDependencies:
@@ -84,8 +86,8 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@buddy-works/visual-test-cypress-plugin@0.0.1:
-    resolution: {integrity: sha512-kHIRSDtSkLmWYYWfvuJ2sKYYI5a5/uQELB4Hi0i2n/nBlz3TP568HEVn3EQ+eLZhthmlWZNOZGY29kctVpWUVw==, tarball: https://npm.pkg.github.com/download/@buddy-works/visual-test-cypress-plugin/0.0.1/ffeccddcb02ee6c512c807b1dde6f986e577ea34}
+  /@buddy-works/visual-test-cypress-plugin@0.0.4:
+    resolution: {integrity: sha512-zHfDYf2nfwaC/7jBtuD28THLpZQx77ov2cRktAjVPVsdKbd61OjJcKdIBC5gRixsOYl0keWelTFjnvYzmPRKEg==, tarball: https://npm.pkg.github.com/download/@buddy-works/visual-test-cypress-plugin/0.0.4/46d8be77eee5212af51a80140643616bba04d0a3}
     engines: {node: '>=18.0.0'}
     dev: false
 
@@ -140,6 +142,11 @@ packages:
       ajv: 8.12.0
       ajv-formats: 2.1.1(ajv@8.12.0)
       fast-uri: 2.2.0
+    dev: false
+
+  /@fastify/busboy@2.1.1:
+    resolution: {integrity: sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==}
+    engines: {node: '>=14'}
     dev: false
 
   /@fastify/cors@8.4.0:
@@ -1130,6 +1137,13 @@ packages:
     dependencies:
       node-domexception: 1.0.0
       web-streams-polyfill: 3.2.1
+    dev: false
+
+  /fetch-blob@4.0.0:
+    resolution: {integrity: sha512-nPmnhRmpNMjYWnp9EBMGs6z5lq9RXed5W1vuZcECrsDVQInM8AMQSooVb3X183Aole60adzjWbH9qlRFWzDDTA==}
+    engines: {node: '>=16.7'}
+    dependencies:
+      node-domexception: 1.0.0
     dev: false
 
   /figures@3.2.0:
@@ -2547,6 +2561,13 @@ packages:
   /undefsafe@2.0.5:
     resolution: {integrity: sha512-WxONCrssBM8TSPRqN5EmsjVrsv4A8X12J4ArBiiayv3DyyG3ZlIg6yysuuSYdZsVz3TKcTg2fd//Ujd4CHV1iA==}
     dev: true
+
+  /undici@6.3.0:
+    resolution: {integrity: sha512-zkSMOXs2topAR1LF0PxAaNNvhdX4LYEcmRMJLMh3mjgfZpBtc/souXOp4aYiR5Q46HrBPA2/8DkEZhD3eNFE1Q==}
+    engines: {node: '>=18.0'}
+    dependencies:
+      '@fastify/busboy': 2.1.1
+    dev: false
 
   /universalify@0.1.2:
     resolution: {integrity: sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==}
