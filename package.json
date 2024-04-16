@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node './server.js'",
     "cy-test": "visual-test-cli exec \"npx cypress run\"",
-    "test": "start-server-and-test start http://localhost:4000 cy-test",
-    "test-ci": "start-server-and-test start http://0.0.0.0:4000 cy-test"
+    "test": "start-server-and-test start http://localhost:4322 cy-test",
+    "test-ci": "start-server-and-test start http://0.0.0.0:4322 cy-test"
   },
   "author": "",
   "license": "ISC",
