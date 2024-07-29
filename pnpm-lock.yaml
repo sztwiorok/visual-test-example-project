@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@buddy-works/visual-test-cli':
-        specifier: ^0.0.20-next.0
-        version: 0.0.20-next.0
+        specifier: ^0.0.20-next.1
+        version: 0.0.20-next.1
       '@buddy-works/visual-test-cypress-plugin':
         specifier: ^0.0.4
         version: 0.0.4
@@ -54,8 +54,8 @@ packages:
     resolution: {integrity: sha512-acGdbYSfp2WheJoJm/EBBBLh/ID8KDc64ISZ9DYtBmC8/Q204PZJLHyzeB5qMzJ5trcOkybd78M4x2KWsUq++A==}
     engines: {node: '>=6.9.0'}
 
-  '@buddy-works/visual-test-cli@0.0.20-next.0':
-    resolution: {integrity: sha512-Nz+GcUgaZ5KCvBq+SijCSvOw76U6ss7qOkQeWxf5txaWqmTEtIClKm5tHRBqlFMUhxytU0vXoPIWGDU8RMd3gQ==, tarball: https://npm.pkg.github.com/download/@buddy-works/visual-test-cli/0.0.20-next.0/af2273d8831e76486a3e6263d7e96c7dd79f3b51}
+  '@buddy-works/visual-test-cli@0.0.20-next.1':
+    resolution: {integrity: sha512-2+Jd4CswPcvslGKQreZyK4PMyqJyiFd1D9821oItYtatokfDyp1hZRE+LIy2PTB7zKnsvp1EOzgPoYAzlSlLaQ==, tarball: https://npm.pkg.github.com/download/@buddy-works/visual-test-cli/0.0.20-next.1/070c67b670d71c58d8bda023e6f10687ea37378f}
     engines: {node: '>=18.20.0'}
     hasBin: true
 
@@ -1370,9 +1370,6 @@ packages:
   stream-combiner@0.0.4:
     resolution: {integrity: sha512-rT00SPnTVyRsaSz5zgSPma/aHSOic5U1prhYdRy5HS2kTZviFpmDgzilbtsJsxiroqACmayynDN/9VzIbX5DOw==}
 
-  streamx@2.15.5:
-    resolution: {integrity: sha512-9thPGMkKC2GctCzyCUjME3yR03x2xNo0GPKGkRw2UMYN+gqWa9uqpyNWhmsNCutU5zHmkUum0LsCRQTXUgUCAg==}
-
   streamx@2.18.0:
     resolution: {integrity: sha512-LLUC1TWdjVdn1weXGcSxyTR3T4+acB6tVGXT95y0nGbca4t4o/ng1wKAGTljm9VicuCVLvRlqFYXYy5GwgM7sQ==}
 
@@ -1593,7 +1590,7 @@ snapshots:
       chalk: 2.4.2
       js-tokens: 4.0.0
 
-  '@buddy-works/visual-test-cli@0.0.20-next.0':
+  '@buddy-works/visual-test-cli@0.0.20-next.1':
     dependencies:
       '@fastify/cors': 9.0.1
       chalk: 5.3.0
@@ -1739,7 +1736,7 @@ snapshots:
 
   agent-base@7.1.0:
     dependencies:
-      debug: 4.3.4(supports-color@8.1.1)
+      debug: 4.3.6
     transitivePeerDependencies:
       - supports-color
 
@@ -2276,7 +2273,7 @@ snapshots:
       proxy-addr: 2.0.7
       rfdc: 1.3.0
       secure-json-parse: 2.7.0
-      semver: 7.5.4
+      semver: 7.6.0
       toad-cache: 3.3.0
 
   fastq@1.15.0:
@@ -2376,7 +2373,7 @@ snapshots:
     dependencies:
       basic-ftp: 5.0.3
       data-uri-to-buffer: 6.0.1
-      debug: 4.3.4(supports-color@8.1.1)
+      debug: 4.3.6
       fs-extra: 8.1.0
     transitivePeerDependencies:
       - supports-color
@@ -2442,7 +2439,7 @@ snapshots:
   http-proxy-agent@7.0.2:
     dependencies:
       agent-base: 7.1.0
-      debug: 4.3.4(supports-color@8.1.1)
+      debug: 4.3.6
     transitivePeerDependencies:
       - supports-color
 
@@ -2455,7 +2452,7 @@ snapshots:
   https-proxy-agent@7.0.5:
     dependencies:
       agent-base: 7.1.0
-      debug: 4.3.4(supports-color@8.1.1)
+      debug: 4.3.6
     transitivePeerDependencies:
       - supports-color
 
@@ -2709,7 +2706,7 @@ snapshots:
     dependencies:
       '@tootallnate/quickjs-emscripten': 0.23.0
       agent-base: 7.1.0
-      debug: 4.3.4(supports-color@8.1.1)
+      debug: 4.3.6
       get-uri: 6.0.2
       http-proxy-agent: 7.0.2
       https-proxy-agent: 7.0.5
@@ -2832,7 +2829,7 @@ snapshots:
   proxy-agent@6.4.0:
     dependencies:
       agent-base: 7.1.0
-      debug: 4.3.4(supports-color@8.1.1)
+      debug: 4.3.6
       http-proxy-agent: 7.0.2
       https-proxy-agent: 7.0.5
       lru-cache: 7.18.3
@@ -3011,7 +3008,7 @@ snapshots:
   socks-proxy-agent@8.0.2:
     dependencies:
       agent-base: 7.1.0
-      debug: 4.3.4(supports-color@8.1.1)
+      debug: 4.3.6
       socks: 2.7.1
     transitivePeerDependencies:
       - supports-color
@@ -3069,11 +3066,6 @@ snapshots:
     dependencies:
       duplexer: 0.1.2
 
-  streamx@2.15.5:
-    dependencies:
-      fast-fifo: 1.3.2
-      queue-tick: 1.0.1
-
   streamx@2.18.0:
     dependencies:
       fast-fifo: 1.3.2
@@ -3081,7 +3073,6 @@ snapshots:
       text-decoder: 1.1.1
     optionalDependencies:
       bare-events: 2.4.2
-    optional: true
 
   string-width@4.2.3:
     dependencies:
@@ -3125,12 +3116,11 @@ snapshots:
     dependencies:
       b4a: 1.6.4
       fast-fifo: 1.3.2
-      streamx: 2.15.5
+      streamx: 2.18.0
 
   text-decoder@1.1.1:
     dependencies:
       b4a: 1.6.4
-    optional: true
 
   thread-stream@2.4.1:
     dependencies:
