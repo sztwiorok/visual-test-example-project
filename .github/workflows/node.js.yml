@@ -30,5 +30,6 @@ jobs:
         cache: 'pnpm'
     - run: echo GITHUB_SHA $GITHUB_SHA
     - run: git branch -a
+    - run: git merge-base origin/main dev
     - run: pnpm i
     - run: pnpm run test
