@@ -28,5 +28,7 @@ jobs:
       with:
         node-version: "20.x"
         cache: 'pnpm'
+    - run: echo GITHUB_SHA $GITHUB_SHA
+    - run: git branch -a
     - run: pnpm i
     - run: pnpm run test
