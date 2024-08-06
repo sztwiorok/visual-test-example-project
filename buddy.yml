@@ -24,11 +24,9 @@
       execute_commands:
         - "export NODE_TLS_REJECT_UNAUTHORIZED=0"
         - "export SNAPSHOTS_SERVICE_URL=https://visual.sd9.com"
-        - "export SNAPSHOTS_TOKEN=vt-u0ktaj7cukjduilsresi05g7l1ud2nt1d1b4f"
+        - "export SNAPSHOTS_TOKEN=vt-afrimnk7gpcat3q7cv7v1u0pwpb3wpr7b4i83"
         - "export SNAPSHOTS_BROWSER_PATH=/usr/bin/google-chrome-stable"
         - "export CYPRESS_CACHE_FOLDER=/buddy/visual-test-example-project/root/.cache/Cypress"
-        - "export SNAPSHOTS_BRANCH=$BUDDY_EXECUTION_BRANCH"
-        - "export SNAPSHOTS_COMMIT=$BUDDY_EXECUTION_REVISION"
         - "npm run test-ci"
       setup_commands:
         - "apt-get update \\ "
