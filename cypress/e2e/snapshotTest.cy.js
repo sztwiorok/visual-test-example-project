@@ -1,7 +1,7 @@
 describe("snapshot example", () => {
   it("Take snapshot 1", () => {
     cy.visit('/');
-    new Array(1).fill("").forEach((_, index) => {
+    new Array(10).fill("").forEach((_, index) => {
       cy.takeSnap(`Snapshot ${index}`);
     });
   });
@@ -16,12 +16,13 @@ describe("snapshot example", () => {
   //   cy.takeSnap("Snapshot 2");
   // });
   //
-  // it("Take snapshot 2", () => {
-  //   cy.visit("http://localhost:4000/page");
-  //   cy.wait(1000);
-  //   // cy.visit("https://developer.mozilla.org/");
-  //   cy.takeSnap(`Snapshot2`);
-  // });
+  it("Take snapshot 2", () => {
+    cy.visit("/page");
+    cy.wait(1000);
+    new Array(10).fill("").forEach((_, index) => {
+      cy.takeSnap(`Snapshot2 ${index}`);
+    });
+  });
   //
   // it("Take snapshot 4", () => {
   //   cy.visit("https://buddy.works/blog");
