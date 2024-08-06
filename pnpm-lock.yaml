@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@buddy-works/visual-test-cli':
-        specifier: ^0.0.20-next.1
-        version: 0.0.20-next.1
+        specifier: ^0.0.21
+        version: 0.0.21
       '@buddy-works/visual-test-cypress-plugin':
         specifier: ^0.0.4
         version: 0.0.4
@@ -54,8 +54,8 @@ packages:
     resolution: {integrity: sha512-acGdbYSfp2WheJoJm/EBBBLh/ID8KDc64ISZ9DYtBmC8/Q204PZJLHyzeB5qMzJ5trcOkybd78M4x2KWsUq++A==}
     engines: {node: '>=6.9.0'}
 
-  '@buddy-works/visual-test-cli@0.0.20-next.1':
-    resolution: {integrity: sha512-2+Jd4CswPcvslGKQreZyK4PMyqJyiFd1D9821oItYtatokfDyp1hZRE+LIy2PTB7zKnsvp1EOzgPoYAzlSlLaQ==, tarball: https://npm.pkg.github.com/download/@buddy-works/visual-test-cli/0.0.20-next.1/070c67b670d71c58d8bda023e6f10687ea37378f}
+  '@buddy-works/visual-test-cli@0.0.21':
+    resolution: {integrity: sha512-ZRYC+9D5Ui1DzQHjzNiA2jlAZvdBNp2t7Onc7zlum8gW0NzA4F1OOvTLQFBUSq+WKR7CeP69/EDwIWCz2OFkfg==, tarball: https://npm.pkg.github.com/download/@buddy-works/visual-test-cli/0.0.21/ea1b352fb1b5cc664b458afb4f466b5319a850a4}
     engines: {node: '>=18.20.0'}
     hasBin: true
 
@@ -1590,7 +1590,7 @@ snapshots:
       chalk: 2.4.2
       js-tokens: 4.0.0
 
-  '@buddy-works/visual-test-cli@0.0.20-next.1':
+  '@buddy-works/visual-test-cli@0.0.21':
     dependencies:
       '@fastify/cors': 9.0.1
       chalk: 5.3.0
