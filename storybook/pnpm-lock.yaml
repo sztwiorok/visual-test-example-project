@@ -16,8 +16,8 @@ importers:
         version: 18.3.1(react@18.3.1)
     devDependencies:
       '@buddy-works/visual-test-cli':
-        specifier: ^0.0.21
-        version: 0.0.21(typescript@5.5.4)
+        specifier: ^0.0.22
+        version: 0.0.22(typescript@5.5.4)
       '@chromatic-com/storybook':
         specifier: ^1.6.1
         version: 1.6.1(react@18.3.1)
@@ -729,8 +729,8 @@ packages:
   '@base2/pretty-print-object@1.0.1':
     resolution: {integrity: sha512-4iri8i1AqYHJE2DstZYkyEprg6Pq6sKx3xn5FpySk9sNhH7qN2LLlHJCfDTZRILNwQNPD7mATWM0TBui7uC1pA==}
 
-  '@buddy-works/visual-test-cli@0.0.21':
-    resolution: {integrity: sha512-ZRYC+9D5Ui1DzQHjzNiA2jlAZvdBNp2t7Onc7zlum8gW0NzA4F1OOvTLQFBUSq+WKR7CeP69/EDwIWCz2OFkfg==, tarball: https://npm.pkg.github.com/download/@buddy-works/visual-test-cli/0.0.21/ea1b352fb1b5cc664b458afb4f466b5319a850a4}
+  '@buddy-works/visual-test-cli@0.0.22':
+    resolution: {integrity: sha512-QXffk/jSlHBHcJX4+9czieZa73MReSXw4CbjtCt0VVngtVDd5AxaqX+v7YPPx1dZacXJp1Cp/q0v1ci+KzLyUA==, tarball: https://npm.pkg.github.com/download/@buddy-works/visual-test-cli/0.0.22/2d6582debfef96f4150d935197b80f2e56489c97}
     engines: {node: '>=18.20.0'}
     hasBin: true
 
@@ -4615,7 +4615,7 @@ snapshots:
 
   '@base2/pretty-print-object@1.0.1': {}
 
-  '@buddy-works/visual-test-cli@0.0.21(typescript@5.5.4)':
+  '@buddy-works/visual-test-cli@0.0.22(typescript@5.5.4)':
     dependencies:
       '@fastify/cors': 9.0.1
       chalk: 5.3.0
