@@ -24,7 +24,6 @@
       execute_commands:
         - "export NODE_TLS_REJECT_UNAUTHORIZED=0"
         - "export SNAPSHOTS_SERVICE_URL=https://visual.sd9.com"
-        - "export SNAPSHOTS_TOKEN=vt-afrimnk7gpcat3q7cv7v1u0pwpb3wpr7b4i83"
         - "export SNAPSHOTS_BROWSER_PATH=/usr/bin/google-chrome-stable"
         - "export CYPRESS_CACHE_FOLDER=/buddy/visual-test-example-project/root/.cache/Cypress"
         - "npm run test-ci"
@@ -65,7 +64,6 @@
       execute_commands:
         - "export NODE_TLS_REJECT_UNAUTHORIZED=0"
         - "export SNAPSHOTS_SERVICE_URL=https://visual.sd9.com"
-        - "export SNAPSHOTS_TOKEN=vt-afrimnk7gpcat3q7cv7v1u0pwpb3wpr7b4i83"
         - "export SNAPSHOTS_BROWSER_PATH=/usr/bin/google-chrome-stable"
         - "export CYPRESS_CACHE_FOLDER=/buddy/visual-test-example-project/root/.cache/Cypress"
         - "npm run test-ci"
