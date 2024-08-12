@@ -51,6 +51,7 @@
       execute_commands:
         - "cd storybook"
         - "pnpm i --no-frozen-lockfile"
+        - "pnpm run build-storybook"
       setup_commands:
         - "npm i pnpm -g"
       volume_mappings:
@@ -130,6 +131,7 @@
       execute_commands:
         - "cd storybook"
         - "pnpm i --no-frozen-lockfile"
+        - "pnpm run build-storybook"
       setup_commands:
         - "npm i pnpm -g"
       volume_mappings:
