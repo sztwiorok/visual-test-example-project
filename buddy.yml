@@ -117,7 +117,7 @@
         - "    && service dbus start \\"
         - "    && rm -rf /var/lib/apt/lists/*"
       shell: "BASH"
-- pipeline: "Run tests STORYBOOK"
+- pipeline: "Run tests dev STORYBOOK"
   on: "CLICK"
   refs:
     - "refs/heads/dev"
