@@ -25,7 +25,7 @@
         - "export NODE_TLS_REJECT_UNAUTHORIZED=0"
         - "export SNAPSHOTS_SERVICE_URL=https://visual.sd9.com"
         - "export SNAPSHOTS_BROWSER_PATH=/usr/bin/google-chrome-stable"
-        - "export CYPRESS_CACHE_FOLDER=/buddy/visual-test-example-project/root/.cache/Cypress"
+        - "export CYPRESS_CACHE_FOLDER=$(pwd)/root/.cache/Cypress"
         - "npm run test-ci"
       setup_commands:
         - "apt-get update \\ "
@@ -105,7 +105,7 @@
         - "export NODE_TLS_REJECT_UNAUTHORIZED=0"
         - "export SNAPSHOTS_SERVICE_URL=https://visual.sd9.com"
         - "export SNAPSHOTS_BROWSER_PATH=/usr/bin/google-chrome-stable"
-        - "export CYPRESS_CACHE_FOLDER=/buddy/visual-test-example-project/root/.cache/Cypress"
+        - "export CYPRESS_CACHE_FOLDER=$(pwd)/root/.cache/Cypress"
         - "npm run test-ci"
       setup_commands:
         - "apt-get update \\ "
