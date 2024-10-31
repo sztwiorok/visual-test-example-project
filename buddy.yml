@@ -91,7 +91,7 @@
       execute_commands:
         - "cd storybook-react-native"
         - "npm i"
-        - "non run build-storybook"
+        - "npm run build-storybook"
       volume_mappings:
         - "/:/buddy/visual-test-example-project"
       shell: "BASH"
