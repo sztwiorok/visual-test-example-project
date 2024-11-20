@@ -17,8 +17,8 @@
     "prettier": "3.0.3"
   },
   "dependencies": {
-    "bdy": "1.8.8-dev",
-    "@buddy-works/visual-test-cypress-plugin": "^0.0.4",
+    "bdy": "1.8.11-dev",
+    "@buddy-works/visual-test-cypress-plugin": "^0.0.5",
     "@fastify/cors": "8.4.0",
     "@fastify/static": "6.11.2",
     "cypress": "13.3.1",
