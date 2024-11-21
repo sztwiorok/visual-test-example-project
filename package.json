@@ -5,9 +5,12 @@
   "main": "server.js",
   "scripts": {
     "start": "node './server.js'",
-    "cy-test": "bdy vt exec \"npx cypress run\"",
+    "cy-test": "bdy vt exec \"npx cypress run --spec 'cypress/e2e/snapshotTest.cy.js'\"",
+    "cy-test-error": "bdy vt exec \"npx cypress run --spec 'cypress/e2e/errorTest.cy.js'\"",
     "test": "start-server-and-test start http://localhost:4322 cy-test",
-    "test-ci": "start-server-and-test start http://0.0.0.0:4322 cy-test"
+    "test-error": "start-server-and-test start http://localhost:4322 cy-test-error",
+    "test-ci": "start-server-and-test start http://0.0.0.0:4322 cy-test",
+    "test-ci-error": "start-server-and-test start http://0.0.0.0:4322 cy-test-error"
   },
   "author": "",
   "license": "ISC",
@@ -17,7 +20,7 @@
     "prettier": "3.0.3"
   },
   "dependencies": {
-    "bdy": "1.8.11-dev",
+    "bdy": "1.8.12-dev",
     "@buddy-works/visual-test-cypress-plugin": "^0.0.5",
     "@fastify/cors": "8.4.0",
     "@fastify/static": "6.11.2",

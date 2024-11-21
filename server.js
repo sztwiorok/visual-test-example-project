@@ -29,4 +29,8 @@ app.get("/page", (request, reply) => {
   reply.sendFile("page.html");
 });
 
+app.get("/error", (request, reply) => {
+  reply.sendFile("error.html");
+});
+
 app.listen({ host: isCI ? '0.0.0.0' : 'localhost',  port });
