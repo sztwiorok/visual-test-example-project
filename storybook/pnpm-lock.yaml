@@ -55,8 +55,8 @@ importers:
         specifier: ^4.3.1
         version: 4.3.1(vite@5.4.0(@types/node@22.1.0))
       bdy:
-        specifier: 1.8.12-dev
-        version: 1.8.12-dev
+        specifier: 1.8.15-dev
+        version: 1.8.15-dev
       eslint:
         specifier: ^9.8.0
         version: 9.8.0
@@ -1719,8 +1719,8 @@ packages:
   bcrypt-pbkdf@1.0.2:
     resolution: {integrity: sha512-qeFIXtP4MSoi6NLqO12WfqARWWuCKi2Rn/9hJLEmtB5yTNr9DqFWkJRCf2qShWzPeAMRnOgCrq0sg/KLv5ES9w==}
 
-  bdy@1.8.12-dev:
-    resolution: {integrity: sha512-m5Ds/DGpKTHOCfpihltnX1natBVVUE/Gly2TtN4cZWiUvxyby7Ep5A7xtHUa+R+6jEnVz6qjbUZho/ggbBiCIg==}
+  bdy@1.8.15-dev:
+    resolution: {integrity: sha512-Ikb+5ogAj4MBoEA7gd948NZ40gSBABLJuIDkSowFUl/V+ZiGx2sp/bhXo70IOE4NYC8uLJPho6NOE6/nuZ4/Vw==}
     hasBin: true
 
   binary-extensions@2.3.0:
@@ -1917,6 +1917,10 @@ packages:
 
   cross-spawn@7.0.3:
     resolution: {integrity: sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==}
+    engines: {node: '>= 8'}
+
+  cross-spawn@7.0.6:
+    resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
     engines: {node: '>= 8'}
 
   crypto-random-string@4.0.0:
@@ -5975,7 +5979,7 @@ snapshots:
     dependencies:
       tweetnacl: 0.14.5
 
-  bdy@1.8.12-dev:
+  bdy@1.8.15-dev:
     dependencies:
       '@fastify/accept-negotiator': 1.1.0
       '@fastify/cors': 9.0.1
@@ -5985,7 +5989,7 @@ snapshots:
       chalk: 4.1.2
       commander: 12.1.0
       content-disposition: 0.5.4
-      cross-spawn: 7.0.3
+      cross-spawn: 7.0.6
       fastify: 4.28.1
       isbinaryfile: 5.0.2
       jsonwebtoken: 9.0.2
@@ -6216,6 +6220,12 @@ snapshots:
     optional: true
 
   cross-spawn@7.0.3:
+    dependencies:
+      path-key: 3.1.1
+      shebang-command: 2.0.0
+      which: 2.0.2
+
+  cross-spawn@7.0.6:
     dependencies:
       path-key: 3.1.1
       shebang-command: 2.0.0
