@@ -55,8 +55,8 @@ importers:
         specifier: ^4.3.1
         version: 4.3.1(vite@5.4.0(@types/node@22.1.0))
       bdy:
-        specifier: 1.8.15-dev
-        version: 1.8.15-dev
+        specifier: 1.8.16-dev
+        version: 1.8.16-dev
       eslint:
         specifier: ^9.8.0
         version: 9.8.0
@@ -1719,8 +1719,8 @@ packages:
   bcrypt-pbkdf@1.0.2:
     resolution: {integrity: sha512-qeFIXtP4MSoi6NLqO12WfqARWWuCKi2Rn/9hJLEmtB5yTNr9DqFWkJRCf2qShWzPeAMRnOgCrq0sg/KLv5ES9w==}
 
-  bdy@1.8.15-dev:
-    resolution: {integrity: sha512-Ikb+5ogAj4MBoEA7gd948NZ40gSBABLJuIDkSowFUl/V+ZiGx2sp/bhXo70IOE4NYC8uLJPho6NOE6/nuZ4/Vw==}
+  bdy@1.8.16-dev:
+    resolution: {integrity: sha512-xoxqWNC2xbcmokGTywGJvzFf4c0GVQjTLd9EJIj5d/909HS+vyPQIlWrJ5WCCYvqHFzNFxbc+WupFesX94wVwg==}
     hasBin: true
 
   binary-extensions@2.3.0:
@@ -5299,7 +5299,7 @@ snapshots:
       '@storybook/core': 8.2.8
       '@storybook/csf': 0.1.11
       '@types/cross-spawn': 6.0.6
-      cross-spawn: 7.0.3
+      cross-spawn: 7.0.6
       globby: 14.0.2
       jscodeshift: 0.15.2(@babel/preset-env@7.25.3(@babel/core@7.25.2))
       lodash: 4.17.21
@@ -5979,7 +5979,7 @@ snapshots:
     dependencies:
       tweetnacl: 0.14.5
 
-  bdy@1.8.15-dev:
+  bdy@1.8.16-dev:
     dependencies:
       '@fastify/accept-negotiator': 1.1.0
       '@fastify/cors': 9.0.1
@@ -6504,7 +6504,7 @@ snapshots:
 
   execa@5.1.1:
     dependencies:
-      cross-spawn: 7.0.3
+      cross-spawn: 7.0.6
       get-stream: 6.0.1
       human-signals: 2.1.0
       is-stream: 2.0.1
@@ -6516,7 +6516,7 @@ snapshots:
 
   execa@8.0.1:
     dependencies:
-      cross-spawn: 7.0.3
+      cross-spawn: 7.0.6
       get-stream: 8.0.1
       human-signals: 5.0.0
       is-stream: 3.0.0
