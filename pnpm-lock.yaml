@@ -43,7 +43,7 @@ importers:
 packages:
 
   '@buddy-works/cypress@0.0.5':
-    resolution: {integrity: sha512-f36sJcwDV8eV82eHEUnZ4/6j/nrNo3gNpAneztjM8ZasM74iMKWtG9oBuu0mhI4gYyP1lWjr3rUBnCb+OmWXhA==, tarball: https://npm.pkg.github.com/download/@buddy-works/cypress/0.0.5/ef494c46ea069baf3173747b7a9039f2ca35b207}
+    resolution: {integrity: sha512-f36sJcwDV8eV82eHEUnZ4/6j/nrNo3gNpAneztjM8ZasM74iMKWtG9oBuu0mhI4gYyP1lWjr3rUBnCb+OmWXhA==}
     engines: {node: '>=18.0.0'}
 
   '@colors/colors@1.5.0':
