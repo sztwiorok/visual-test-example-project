@@ -12,6 +12,7 @@
     "test": "start-server-and-test start http://localhost:4322 cy-test",
     "test-error": "start-server-and-test start http://localhost:4322 cy-test-error",
     "test-nested": "start-server-and-test start http://localhost:4322 cy-test-nested",
+    "test-crop": "start-server-and-test start http://localhost:4322 cy-test-crop",
     "test-ci": "start-server-and-test start http://0.0.0.0:4322 cy-test",
     "test-ci-error": "start-server-and-test start http://0.0.0.0:4322 cy-test-error",
     "test-ci-nested": "start-server-and-test start http://0.0.0.0:4322 cy-test-nested",
