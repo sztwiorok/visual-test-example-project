@@ -10,7 +10,7 @@ on:
     branches: [ "main" ]
 
 env:
-  SNAPSHOTS_SERVICE_URL: https://ef9a-93-179-255-178.ngrok-free.app
+  SNAPSHOTS_SERVICE_URL: https://vt-dev-io.eu-1.24h.sh
   SNAPSHOTS_TOKEN: bud_vt_us_umgclb80y2r8myeo0gl7gkqm40dj12
 
 jobs:
@@ -28,8 +28,8 @@ jobs:
       with:
         node-version: "20.x"
         cache: 'pnpm'
-    - run: echo GITHUB_SHA $GITHUB_SHA
-    - run: git branch -a
-    - run: git merge-base origin/main origin/dev
-    - run: pnpm i
-    - run: pnpm run test
+    - run: sudo apt-get update && sudo apt-get install -y software-properties-common
+    - run: sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv eb39332e766364ca6220e8dc631c5a16310cc0ad
+    - run: sudo add-apt-repository 'deb [arch=amd64] https://es.buddy.works/bdy/apt-repo dev main'
+    - run: sudo apt-get update && sudo apt-get install -y bdy
+    - run: npm run test-ci
