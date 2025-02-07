@@ -30,5 +30,5 @@ jobs:
     - run: sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv eb39332e766364ca6220e8dc631c5a16310cc0ad
     - run: sudo add-apt-repository 'deb [arch=amd64] https://es.buddy.works/bdy/apt-repo dev main'
     - run: sudo apt-get update && sudo apt-get install -y bdy
-    - run: echo $SNAPSHOTS_SERVICE_URL
+    - run: pnpm install
     - run: npm run test-ci
